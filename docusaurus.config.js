@@ -23,8 +23,14 @@ const config = {
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'ja',
+    locales: ['ja'],
+    localeConfigs: {
+      ja: {
+        label: '日本語',
+        direction: 'ltr',
+      },
+    },
   },
 
   presets: [
@@ -151,7 +157,7 @@ const config = {
         indexPages: false,
 
         // language of your documentation, see next section
-        language: "en",
+        language: ["en", "ja"],
 
         // lunr.js-specific settings
         lunr: {
@@ -161,7 +167,7 @@ const config = {
           // By default, it splits the text at whitespace and dashes.
           //
           // Note: Does not work for "ja" and "th" languages, since these use a different tokenizer.
-          tokenizerSeparator: /[\s\-]+/,
+          tokenizerSeparator: /[\s\-\u{3000}-\u{301C}\u{3041}-\u{3093}\u{309B}-\u{309E}]+/gu,
         }
       },
     ],
