@@ -1,0 +1,108 @@
+---
+sidebar_position: 2
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# Image Difference
+
+## PNG
+
+画像は `static/img/docusaurus.png` 
+
+<Tabs>
+<TabItem value="markdown" label="Markdown" default>
+
+```markdown
+![image example](/img/docusaurus.png)
+```
+
+![image example](/img/docusaurus.png)
+
+</TabItem>
+<TabItem value="require" label="CommonJS require">
+
+```jsx
+<img
+  src={require('/img/docusaurus.png').default}
+  alt="image example"
+/>
+```
+<img
+  src={require('/img/docusaurus.png').default}
+  alt="image example"
+/>
+
+</TabItem>
+<TabItem value="import" label="ES import">
+
+```jsx
+import myImageUrl from '/img/docusaurus.png';
+
+<img src={myImageUrl} alt="Example banner" />
+```
+
+import myImageUrl from '/img/docusaurus.png';
+
+<img src={myImageUrl} alt="Example banner" />
+
+</TabItem>
+</Tabs>
+
+## SVG
+
+画像は`static/img/logo.svg`
+
+<Tabs>
+<TabItem value="markdown" title="Markdown" default>
+
+```markdown
+![svg example](/img/logo.svg)
+```
+
+![svg example](/img/logo.svg)
+
+</TabItem>
+<TabItem value="require" label="CommonJS require">
+
+```jsx
+<img
+  src={require('/img/logo.svg').default}
+  alt="image example"
+/>
+```
+
+<img
+  src={require('/img/logo.svg').default}
+  alt="image example"
+/>
+
+</TabItem>
+<TabItem value="import" label="ES import">
+
+```jsx
+import mySvgUrl from '/img/logo.svg';
+
+<img src={mySvgUrl} alt="Example banner" />
+```
+
+import mySvgUrl from '/img/logo.svg';
+
+<img src={mySvgUrl} alt="Example banner" />
+
+</TabItem>
+<TabItem value="inline" label="Inline SVGs">
+
+```jsx
+import Logo from "/img/logo.svg"
+
+<Logo />
+```
+
+import Logo from "/img/logo.svg"
+
+<Logo />
+
+</TabItem>
+</Tabs>
