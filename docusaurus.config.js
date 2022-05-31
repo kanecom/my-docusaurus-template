@@ -139,8 +139,7 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
-  plugins: [
-  ],
+  plugins: ["@syed-ahmed/docusaurus-plugin-react-pdf"],
   themes: [
     [
       require.resolve("@easyops-cn/docusaurus-search-local"),

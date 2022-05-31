@@ -51,7 +51,8 @@ const sidebars = {
       label: 'Playground',
       items: [
         'playground/japanese-page',
-        'playground/image-difference'
+        'playground/image-difference',
+        'playground/react-pdf'
       ]
     }
   ],
