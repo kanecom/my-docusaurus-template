@@ -52,7 +52,8 @@ const sidebars = {
       items: [
         'playground/japanese-page',
         'playground/image-difference',
-        'playground/react-pdf'
+        'playground/react-pdf',
+        'playground/react-data-table-component',
       ]
     }
   ],

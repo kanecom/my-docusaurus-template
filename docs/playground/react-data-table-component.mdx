@@ -1,0 +1,91 @@
+# React Data Table Component を試してみる
+
+## 実装
+
+```jsx
+import DataTable from 'react-data-table-component';
+
+export const columns = [
+    {
+        name: 'Title',
+        selector: row => row.title,
+        sortable: true,
+    },
+    {
+        name: 'Year',
+        selector: row => row.year,
+        sortable: true,
+    },
+];
+
+export const data = [
+    {
+        id: 1,
+        title: 'Beetlejuice',
+        year: '1988',
+    },
+    {
+        id: 2,
+        title: 'Ghostbusters',
+        year: '1984',
+    },
+]
+
+export function SortableTable() {
+    return (
+        <DataTable
+            theme="dark"
+            columns={columns}
+            data={data}
+        />
+    );
+};
+
+```
+
+import DataTable from 'react-data-table-component';
+
+export const columns = [
+    {
+        name: 'Title',
+        selector: row => row.title,
+        sortable: true,
+    },
+    {
+        name: 'Year',
+        selector: row => row.year,
+        sortable: true,
+    },
+];
+
+export const data = [
+    {
+        id: 1,
+        title: 'Beetlejuice',
+        year: '1988',
+    },
+    {
+        id: 2,
+        title: 'Ghostbusters',
+        year: '1984',
+    },
+]
+
+export function SortableTable() {
+    return (
+        <DataTable
+            theme="dark"
+            columns={columns}
+            data={data}
+        />
+    );
+};
+
+<SortableTable />
+
+## 所感
+
+`styled-component` 依存があったから動かないか心配していたが、特に問題なさそう。  
+ただ、Docusaurus本体のテーマ切り替えに追従させかたがわからない。
+
+あと、生成される表が `table` 要素ではなく全部 `div` なのは素行が悪いなって感じがする。
