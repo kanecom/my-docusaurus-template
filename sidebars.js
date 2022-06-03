@@ -54,6 +54,7 @@ const sidebars = {
         'playground/image-difference',
         'playground/react-pdf',
         'playground/react-data-table-component',
+        'playground/react-table',
       ]
     }
   ],
