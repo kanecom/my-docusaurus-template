@@ -55,6 +55,7 @@ const sidebars = {
         'playground/react-pdf',
         'playground/react-data-table-component',
         'playground/react-table',
+        'playground/mermaid',
       ]
     }
   ],
